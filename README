@@ -1,0 +1,21 @@
+
+Graphite-RabbitMQ Integration
+=============================
+
+Graphite - http://graphite.wikidot.com
+RabbitMQ - http://www.rabbitmq.com
+Blog - FIXME
+
+INSTALLATION
+------------
+
+Requires py-amqplib http://barryp.org/software/py-amqplib/
+
+Drop contents of this repository into GRAPHITE_HOME/carbon
+directory, edit graphite_rabbitmq_config.py, run it
+to create queues, then run carbon-agent-rabbitmq.py with
+same options you run carbon-agent.py with.
+
+Watch out for multiple instances of carbon-persister.py 
+writing to the same whisper files!
+
